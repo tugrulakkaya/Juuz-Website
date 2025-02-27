@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 40px 20px;
+    font-size: 24px;
+}
+
+/* Standard Section Styling */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Animationen */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+/* Highlight-Effekt */
+.highlight {
+    color: #0073e6;
+    font-weight: bold;
+}
+
+/* Wort-für-Wort Animation */
+.word-by-word {
+    opacity: 0;
+    display: inline-block;
+    animation: fadeInWords 2s ease-out forwards;
+}
+
+@keyframes fadeInWords {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffdb4d;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: #0073e6;
+    color: white;
+}
